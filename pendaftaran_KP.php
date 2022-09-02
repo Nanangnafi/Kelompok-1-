@@ -202,7 +202,6 @@ include "koneksi.php";
         <table class="table table-bordered table-striped table-hover">
           <tr>
             <th>No</th>
-            <th>Id</th>
             <th>Tempat</th>
             <th>Alamat</th>
             <th>Tgl Mulai</th>
@@ -222,7 +221,6 @@ include "koneksi.php";
           ?>
             <tr>
               <td> <?= $No++ ?> </td>
-              <td><?= $data['id'] ?></td>
               <td><?= $data['tempat_kp'] ?></td>
               <td><?= $data['alamat_kp'] ?></td>
               <td><?= $data['tanggal_mulai'] ?></td>
@@ -343,11 +341,6 @@ include "koneksi.php";
               </div>
               <form method="POST" action="aksi_pendafkp.php">
                 <div class="modal-body">
-
-                  <div class="mb-3">
-                    <label class="form-label">Id</label>
-                    <input type="text" class="form-control" name="tid">
-                  </div>
 
                   <div class="mb-3">
                     <label class="form-label">Tempat</label>
